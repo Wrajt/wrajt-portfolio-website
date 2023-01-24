@@ -12,3 +12,14 @@ $(document).ready(function () {
     $(".title").css({ "background-position": traX + "%" + traY + "%" });
   });
 });
+
+const checkbox = document.getElementById("dark-mode-checkbox");
+const body = document.querySelector("body");
+
+checkbox.addEventListener("change", () => {
+  if (checkbox.checked) {
+    body.classList.add("dark-mode");
+  } else {
+    body.classList.remove("dark-mode");
+  }
+});
