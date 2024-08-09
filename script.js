@@ -15,11 +15,14 @@ $(document).ready(function () {
 
 const checkbox = document.getElementById("dark-mode-checkbox");
 const body = document.querySelector("body");
+const html = document.querySelector("html");
 
 checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
     body.classList.add("dark-mode");
+    html.classList.add("dark-mode");
   } else {
     body.classList.remove("dark-mode");
+    html.classList.remove("dark-mode");
   }
 });
